@@ -13,7 +13,7 @@ use yii\web\AssetBundle;
 class Asset extends AssetBundle
 {
 
-    public $sourcePath = '@BluezipBackbone/dist/';
+    public $sourcePath = '@BZBackbone/dist/';
     public $path = '';
     public $css = [];
     public $js = [
