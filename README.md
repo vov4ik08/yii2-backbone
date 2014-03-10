@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist bluezip/blupzip-yii2-backbone "*"
+php composer.phar require --prefer-dist bluezip/bluezip-yii2-backbone "*"
 ```
 
 or add
 
 ```
-"bluezip/blupzip-yii2-backbone": "*"
+"bluezip/bluezip-yii2-backbone": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -28,5 +28,5 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \bluezip\yii2\backbone\Autoload::widget(); ?>
+<?php \bluezip\yii2\backbone\Load::widget(); ?>
 ```

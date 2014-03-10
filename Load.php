@@ -1,23 +1,30 @@
 <?php
 
 namespace bluezip\yii2\backbone;
-
 use bluezip\yii2\backbone\assets\Asset;
 
-class Autoload extends \yii\base\widget {
+/**
+ * Class Load
+ * @package bluezip\yii2\backbone
+ */
+class Load extends \yii\base\widget {
+
     public function init(){
         parent::init();
-        \Yii::setAlias('@BluezipBackbone', dirname(__FILE__));
+        \Yii::setAlias('@BZBackbone', dirname(__FILE__));
         $this->registerAsset();
     }
 
-
+    /**
+     * No return anything
+     * @return string
+     */
     public function run() {
         return '';
     }
 
     /**
-     * Publish js css
+     * Publish js and css
      */
     private function registerAsset(){
         $view = $this->getView();
