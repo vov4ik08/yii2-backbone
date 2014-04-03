@@ -1,5 +1,5 @@
 {
-    "name": "bluezip/bluezip-yii2-backbone",
+    "name": "bluezip/yii2-backbone",
     "description": "Easily use backbone.js and Underscore.js with yii2",
     "type": "yii2-extension",
     "keywords": ["yii2","backbone.js","underscore.js"],
