@@ -1,15 +1,19 @@
 <?php
 
 namespace bluezip\yii2\backbone;
+
 use bluezip\yii2\backbone\assets\Asset;
+use yii\base\Widget;
 
 /**
  * Class Load
+ *
  * @package bluezip\yii2\backbone
  */
-class Load extends \yii\base\widget {
-
-    public function init(){
+class Load extends Widget
+{
+    public function init()
+    {
         parent::init();
         \Yii::setAlias('@BZBackbone', dirname(__FILE__));
         $this->registerAsset();
@@ -17,16 +21,19 @@ class Load extends \yii\base\widget {
 
     /**
      * No return anything
+     *
      * @return string
      */
-    public function run() {
+    public function run()
+    {
         return '';
     }
 
     /**
      * Publish js and css
      */
-    private function registerAsset(){
+    private function registerAsset()
+    {
         $view = $this->getView();
         Asset::register($view);
     }
