@@ -18,6 +18,8 @@ class Asset extends AssetBundle
     public $js = [
         'js/underscore-1.6.0-min.js',
         'js/backbone-1.1.2-min.js',
+        'app/app.js',
+        'app/resources.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
