@@ -5,14 +5,16 @@ var App = function () {
 
     this.router = new AppRouter();
 
-    this.routing = (function (self, pageFrames) {
-        self.router.on("route:users", loadUser);
+    //this.routing = (function (self, pageFrames) {
+    this.router.on("route:users", loadUser);
 
 
         function loadUser() {
-            alert(1);
+            $.get( "users", function( data ) {
+                $(".site-index").html(data);
+            });
         }
-    });
+    //});
 
         $(document).on("click", "a[href^='/#']", function (event) {
             href = $(event.currentTarget).attr("href");
@@ -23,8 +25,7 @@ var App = function () {
             }
 
             url = href.replace(/^\//, '').replace('\#\!\/', '');
-            console.log(url);
-            return false;
+
 
             // navigate to new page, and trigger this event
             app.router.navigate(url, {trigger: true});
@@ -38,7 +39,7 @@ var App = function () {
     var AppRouter = Backbone.Router.extend({
 
         routes: {
-            "users": "users"
+            "admin/users": "users"
 
         },
         //
@@ -66,5 +67,4 @@ var App = function () {
 
 $(document).ready(function(){
     window.app = new App();
-    console.log(1);
 });
