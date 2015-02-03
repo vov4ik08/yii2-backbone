@@ -12,14 +12,12 @@ use yii\web\AssetBundle;
  */
 class Asset extends AssetBundle
 {
-    public $sourcePath = '@BZBackbone/dist/';
+    public $sourcePath = '@vendor/appolo/yii2-backbone/dist';
     public $path = '';
     public $css = [];
     public $js = [
         'js/underscore-1.6.0-min.js',
         'js/backbone-1.1.2-min.js',
-        'app/app.js',
-        'app/resources.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

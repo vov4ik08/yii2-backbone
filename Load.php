@@ -15,7 +15,6 @@ class Load extends Widget
     public function init()
     {
         parent::init();
-        \Yii::setAlias('@BZBackbone', dirname(__FILE__));
         $this->registerAsset();
     }
 
