@@ -1,5 +1,5 @@
 <?php
-namespace bluezip\yii2\backbone\assets;
+namespace appolo\yii2\backbone\assets;
 
 use yii\web\AssetBundle;
 
