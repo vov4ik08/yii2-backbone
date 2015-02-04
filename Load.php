@@ -1,6 +1,6 @@
 <?php
 
-namespace appolo\yii2\backbone;
+namespace apollo\yii2\backbone;
 
 use bluezip\yii2\backbone\assets\Asset;
 use yii\base\Widget;

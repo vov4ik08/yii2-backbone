@@ -1,5 +1,5 @@
 <?php
-namespace appolo\yii2\backbone\assets;
+namespace apollo\yii2\backbone\assets;
 
 use yii\web\AssetBundle;
 

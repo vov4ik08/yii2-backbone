@@ -1,5 +1,5 @@
 {
-    "name": "appolo/yii2-backbone",
+    "name": "apollo/yii2-backbone",
     "description": "Easily use backbone.js and Underscore.js with yii2",
     "type": "yii2-extension",
     "keywords": ["yii2","backbone.js","underscore.js"],
@@ -12,7 +12,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "appolo\\yii2\\backbone\\": ""
+            "apollo\\yii2\\backbone\\": ""
         }
     }
 }
