@@ -12,7 +12,7 @@ use yii\web\AssetBundle;
  */
 class Asset extends AssetBundle
 {
-    public $sourcePath = '@vendor/appolo/yii2-backbone/dist';
+    public $sourcePath = '@vendor/apollo/yii2-backbone/dist';
     public $path = '';
     public $css = [];
     public $js = [
